@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author : Yao-Chung Chang
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\baselinestretch}{1.3} 
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Yao-Chung Chang}} & Email : {yaochung9744@gmail.com}\\
+  &Mobile : (+886)903393682 \\
+  &Address : {10F.-1, No.72, Sec. 2, Xinyi Rd.}\\
+  &{,Da’an Dist., Taipei City 106, Taiwan}
+  
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {Computer Science Major; required courses GPA(last two years): 3.6}
+      {Aug. 2015 -- Jun. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynasafe Technologies, Inc.}{Neihu, Taipei}
+      {Network Engineer Intern}{Jan 2018 -- Mar 2018}
+      \resumeItemListStart
+        \resumeItem{re-install the operating system of BIG-IP}
+          {F5's BIG-IP is a family of products covering software and hardware designed around application availability, access control, and security solutions.}
+        \resumeItem{Building LAMP environment}
+          {LAMP is the names of original four open-source components: the GNU/Linux operating system, the Apache HTTP Server, the MySQL relational database management system (RDBMS), and the PHP programming language.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Courses}{National Taiwan University, Taipei}
+      {Required and elective courses}{Aug. 2015 -- Sep. 2018}
+      \resumeItemListStart
+        \resumeItem{Data Structure}
+          {Understanding the principle and the complexity of common data structures and use them to complete some projects in C++ language.}
+        \resumeItem{Algorithm design and analyze}
+          {Learning how to design the efficient algorithms to the problems and proving its correctness and complexity.}
+        \resumeItem{System programming in the unix environment}
+          {Knowing how the program works and learning how to use API in Unix system such as FILE I/O, signal, thread, etc.}
+        \resumeItem{Computer network}
+          {Unstanding the concept of five layers Internet protocols and using sockets to simulate TCP Sliding Window algorithm in python.}
+        \resumeItem{Introduction to Cryptography}
+          {Understanding the principle of symmetric-key algorithm(AES, DES), asymmetric-key algorithm(RSA) and some abstract algebra behind them.}
+        \resumeItem{machine learning}
+          {Understanding the principle of some machine learning algorithms and the distributions and the properties of data.}
+      \resumeItemListEnd
+      
+     \resumeSubheading
+      {Skills}{Computer related}
+      {self taught and learn from school}{Aug. 2015 -- Jun. 2019}
+      \resumeItemListStart
+        \resumeItem{Programming languages}
+          {C, C++, python, php(basic), html/css(use bootstrap), shell script(basic)}
+         \resumeItem{Mathematic}
+          {Calculus, Linear Algebra, Probability, Discrete mathematics}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Volunteer experience}
+  \resumeSubHeadingListStart
+    \resumeSubItem{NTU Tutoring Club Member, fall 2017}
+      {Making senior high school students clear on the math problems and helping them finish their homework.}
+    \resumeSubItem{Formosa Plastic Group Museum Volunteer Guide}
+      {Assisting visitors from different locations and ensure the highest level of customer service.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
